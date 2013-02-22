@@ -9,3 +9,5 @@
 textarea { display: none; }
 
 .code-buttons { display: none; }
+.nav-tabs { display: none; }
+.tab-content > .tab-pane { display: block; }
