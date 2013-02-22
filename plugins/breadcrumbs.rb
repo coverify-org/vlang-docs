@@ -51,7 +51,15 @@ module Jekyll
           end
         end
       end
+     
+      #TODO extract this into its own liquid tag
+      show_download = @dirs[@page_url[1..-1]]["allow_download"] != false
+      pdf_path = "/pdf" + @page_url.sub('.html','.pdf') 
       
+      if show_download 
+        output += '<li class="pull-right download"><a class="btn-mini" href="' + pdf_path + '"><i class="icon icon-download-alt"></i>&nbsp;PDF</a></li>'
+      end
+
       output += "</ul>"
       puts "generating breadcrumbs for #{@page_url}"
       output
