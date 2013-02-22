@@ -14,7 +14,7 @@ module Jekyll
       content = Liquid::Template.parse(contents).render context
 
       #strip out special chars and replace spaces with hyphens
-      safeContent = content.rstrip.gsub(/[^\w\s]/,'').gsub(/[\s]/,'-')
+      safeContent = content.strip.gsub(/[^\w\s]/,'').gsub(/[\s]/,'-')
 
       #should refactor this to allow wrapping tag to be passed in
       output = "<#{@tag} class=\"anchor-wrap\"><a name=\"#{safeContent}\" class=\"anchor\" href=\"##{safeContent}\">"

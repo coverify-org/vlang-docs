@@ -1,0 +1,11 @@
+#content aside { width:0; padding:0; margin:0; display:none; }
+#header { display: none }
+#footer { display: none }
+#content {
+  padding-top: 10;
+  overflow: auto;
+  padding-bottom: 0;
+}
+textarea { display: none; }
+
+.code-buttons { display: none; }
