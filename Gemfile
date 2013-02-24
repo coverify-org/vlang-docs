@@ -17,6 +17,6 @@ end
 
 gem 'sinatra', '~> 1.3.2'
 gem 'nokogiri'
+gem 'nokogiri-pretty'
 gem 'juicer'
 gem 'indextank'
-gem 'prawn'
