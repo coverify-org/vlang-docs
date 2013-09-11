@@ -10,14 +10,8 @@ module Jekyll
     def render(context)
       site = context.registers[:site]
       page = context.registers[:page]
-      @page_url = context.environments.first["page"]["url"]
-      @dirs = {}
+      @page_url = page['url']
 
-      site.pages.each do |site_page|
-        path = site_page.url
-        path = path.index('/')==0 ? path[1..-1] : path
-        @dirs[path] = site_page.data
-      end
       
       output='<div class="breadcrumb clearfix"><ul>'
       
@@ -26,14 +20,14 @@ module Jekyll
       levels = @page_url.split('/') #break up url into different levels
       levels.each_with_index do |level, index|
         unless level.empty?
-          if index == levels.size-1 || 
-             (level == levels[levels.size-2] && levels[levels.size-1].to_i > 0)
+          if index == levels.size-1 ||
+             (level == levels[levels.size-2] && levels[levels.size-1].to_i > 0) # Do this for the top level page
             path = @page_url[1..-1]
-            if  @dirs[path]["navigation"]["show"] == true
-              path = @dirs[path]["title"] || path
+            if page["navigation"]["show"] == true
+              path = page["title"] || path
               output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\"><span itemprop=\"title\">#{path}</span><meta itemprop=\"url\" content=\"#{@page_url}\" /></li>" unless level.to_i > 0
             end
-          else
+          else # This is used for all other pages
               link = "/"
               i = 1
               while i <= index
