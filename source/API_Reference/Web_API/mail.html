@@ -38,9 +38,10 @@ send
        <td>Must be a valid email address</td>
 
        <td>This can also be passed in as an array, to send to multiple
-         locations. Note that recipients passed in this parameter will
-       be visible as part of the message. If you wish to hide the
-       recipients, use the TO parameter in the  <a href="{{root_url}}/API_Reference/SMTP_API/index.html">x-smtpapi</a> header.</td>
+         locations. Example: to[]=a@mail.com&to[]=b@mail.com. Note that 
+         recipients passed in this parameter will be visible as part of 
+         the message. If you wish to hide the recipients, use the TO 
+         parameter in the  <a href="{{root_url}}/API_Reference/SMTP_API/index.html">x-smtpapi</a> header.</td>
      </tr>
 
      <tr>
@@ -51,7 +52,7 @@ send
        <td>Must be a string. If <em>to</em> parameter is an array, <em>toname</em> must
        be an array with the exact number of array elements as the <em>to</em> field</td>
 
-       <td>Give a name to the recipient</td>
+       <td>Give a name to the recipient. This can also be passed as an array if the to aobve is an array. Example: toname[]=Alpha&toname[]=Beta.</td>
      </tr>
 
      <tr>
@@ -104,7 +105,7 @@ send
        <td>Must be a valid email address</td>
 
        <td>This can also be passed in as an array of email addresses for multiple
-       recipients</td>
+       recipients. Example: bcc[]=a@mail.com&bcc[]=b@mail.com.</td>
      </tr>
 
      <tr>
@@ -185,14 +186,17 @@ send
 <div class="tab-content">
   <div class="tab-pane active" id="mail-json">
 	        <h3>Call: Send to One Recipient</h3>
-{% codeblock %}
-https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/mail.send.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com{% endrequestdata %}
+      {% endrequestblock %}
 
-	<h3>Call: Send to Multiple Recipients
-{% codeblock lang:bash %}
-https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com
-{% endcodeblock %}
+
+	<h3>Call: Send to Multiple Recipients</h3>
+    {% requestblock %}
+      {% requesturl POST %}https://sendgrid.com/api/mail.send.json{% endrequesturl %}
+      {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com{% endrequestdata %}
+    {% endrequestblock %}
 
 	<h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -211,15 +215,18 @@ https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=
 
   </div>
   <div class="tab-pane" id="mail-xml">
-        <h3>Call: Send to One Recipient</h3>
-{% codeblock %}
-https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com
-{% endcodeblock %}
+      <h3>Call: Send to One Recipient</h3>
+    {% requestblock %}
+      {% requesturl POST %}https://sendgrid.com/api/mail.send.xml{% endrequesturl %}
+      {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com{% endrequestdata %}
+    {% endrequestblock %}
 
-		<h3>Call: Send to Multiple Recipients
-{% codeblock lang:bash %}
-https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com
-{% endcodeblock %}
+
+		<h3>Call: Send to Multiple Recipients</h3>
+    {% requestblock %}
+      {% requesturl POST %}https://sendgrid.com/api/mail.send.xml{% endrequesturl %}
+      {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com{% endrequestdata %}
+    {% endrequestblock %}
 		<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 

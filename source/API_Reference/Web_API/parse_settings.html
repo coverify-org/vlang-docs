@@ -42,9 +42,11 @@ get
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %} 
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/parse.get.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+ 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "parse": [
@@ -66,9 +68,11 @@ https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/parse.get.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -145,9 +149,11 @@ set
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/parse.set.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success </h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -165,9 +171,11 @@ https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=
   </div>
   <div class="tab-pane" id="set-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/parse.set.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1{% endrequestdata %}
+      {% endrequestblock %}
+
 
 <h3>Response: Success<h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -237,9 +245,14 @@ Delete Entry
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 
-{% codeblock %}
-https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
-{% endcodeblock %}
+      {% requestblock %}
+
+        {% requesturl POST %}https://sendgrid.com/api/parse.delete.json{% endrequesturl %}
+
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com{% endrequestdata %}
+
+      {% endrequestblock %}
+
 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -258,9 +271,11 @@ https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_k
   </div>
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/parse.delete.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>

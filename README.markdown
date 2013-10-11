@@ -1,10 +1,12 @@
-#Submit all pull requests to the develop branch
-
-The develop branch is now continuously deployed to a preview site. [View dev site](http://sg-docs.s3-website-us-east-1.amazonaws.com/)
-
 # SendGrid Documentation
 
 This site is based on Octopress, which is in turn based on Jekyll, with a dash of Twitter Bootstrap added.
+
+The develop branch is continuously deployed to a preview site. [View dev site](http://sg-docs.s3-website-us-east-1.amazonaws.com/)
+
+_Please_, feel free to make any contributions you feel will make SendGrid Documentation better.
+
+# Submit all pull requests to the develop branch
 
 ## Setup
 
@@ -96,7 +98,7 @@ JavaScript and CSS are minified and combined using Juicer. The files to be packa
 ## License
 (The MIT License)
 
-Copyright © 2009-2011 Brandon Mathis
+Copyright © 2008-2013 SendGrid Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ‘Software’), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

@@ -36,9 +36,11 @@ List
     <td>The customer subuser who we will update</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 filters><filter><name>twitter</name><title>Twitter</title>
@@ -47,9 +49,11 @@ filters><filter><name>twitter</name><title>Twitter</title>
   </filters
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
@@ -82,17 +86,21 @@ Activate App
     <td>The customer subuser who we will update</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -126,17 +134,21 @@ Deactivate App
     <td>The customer subuser who we will update</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -149,9 +161,11 @@ Customize App
 {% endanchor %}
 <p>These API calls require that settings are passed using POST.</p>
 <h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 filter><field_name>field_value</field_name>
@@ -168,9 +182,11 @@ result><message>error</message><message>... error messages ...</message></result
 filter></filter
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}
 {"message":"success","settings":[{"field_name":"field_value"}]}
@@ -188,9 +204,11 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_u
 Get Current Settings 
 {% endanchor %}
 <h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 filter><field_name>field_value</field_name>
@@ -208,9 +226,11 @@ enabled.</p>
 filter></filter
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}
 {"message":"success","settings":[{"field_name":"field_value"}]}

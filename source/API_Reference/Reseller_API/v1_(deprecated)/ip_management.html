@@ -38,16 +38,20 @@ All
     <td>Include IPs assigned by SendGrid.</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response</h3>
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=al{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 "255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
@@ -87,16 +91,20 @@ Free
     <td>Filter your search results.</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=fre
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=fre{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response</h3>
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=fre
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=fre{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 "255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
@@ -136,16 +144,20 @@ Taken
     <td>Filter your search results.</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=take
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=take{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response</h3>
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=take
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=take{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 "255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
@@ -187,16 +199,20 @@ Available
     <td>Filter your search results.</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=availabl
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=availabl{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response</h3>
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=availabl
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=availabl{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 "255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
@@ -255,16 +271,20 @@ Usage
     <td>Include IPs assigned by SendGrid.</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response</h3>
 {% codeblock %}  <ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.ip.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock %}
 {"ip":"255.255.253.0","user":"user4@example.com"},{"ip":"255.255.254.0","user":"user4@example.com"}

@@ -50,9 +50,11 @@ add
   <div class="tab-content">
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/schedule/add.json{% endrequesturl %}
+        {% requestdata Data POST %}name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 
           <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -70,9 +72,11 @@ https://sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2012-09-05_18
     </div>
     <div class="tab-pane" id="add-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/schedule/add.xml{% endrequesturl %}
+        {% requestdata Data POST %}name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -120,9 +124,11 @@ get
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/schedule/get.json{% endrequesturl %}
+        {% requestdata Data POST %}name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 
           <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -140,9 +146,11 @@ https://sendgrid.com/api/newsletter/schedule/get.json?name=SendGrid_Test2&api_us
     </div>
     <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/schedule/get.xml{% endrequesturl %}
+        {% requestdata Data POST %}name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 

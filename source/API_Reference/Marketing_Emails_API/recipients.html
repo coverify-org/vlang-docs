@@ -46,9 +46,11 @@ add
   <div class="tab-content">
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/recipients/add.json{% endrequesturl %}
+        {% requestdata Data POST %}name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 
           <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -66,9 +68,11 @@ https://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Tes
     </div>
     <div class="tab-pane" id="add-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/recipients/add.xml{% endrequesturl %}
+        {% requestdata Data POST %}name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -122,9 +126,11 @@ get
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/recipients/get.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/recipients/get.json{% endrequesturl %}
+        {% requestdata Data POST %}name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 
           <h3>Response: Success</h3>
 {% codeblock lang:json %}[
@@ -144,9 +150,11 @@ https://sendgrid.com/api/newsletter/recipients/get.json?name=test&api_user=your_
     </div>
     <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/recipients/get.xml{% endrequesturl %}
+        {% requestdata Data POST %}name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -210,9 +218,11 @@ delete
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/delete.json{% endrequesturl %}
+        {% requestdata Data POST %}name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 
           <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -230,9 +240,11 @@ https://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&list=
     </div>
     <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/delete.xml?name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/delete.xml{% endrequesturl %}
+        {% requestdata Data POST %}name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
