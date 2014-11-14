@@ -9,7 +9,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="84"
+   width="96"
    height="40"
    id="svg4596"
    version="1.1"
@@ -27,8 +27,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.4166667"
-     inkscape:cx="42"
+     inkscape:zoom="8"
+     inkscape:cx="42.999999"
      inkscape:cy="20.456437"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -38,11 +38,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="823"
-     inkscape:window-height="554"
-     inkscape:window-x="386"
-     inkscape:window-y="107"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
      showborder="true"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -54,8 +54,8 @@
        visible="false"
        enabled="true"
        snapvisiblegridlinesonly="false"
-       originx="-1.0000014px"
-       originy="0.99999909px" />
+       originx="-2.8306641e-06px"
+       originy="0.99999937px" />
   </sodipodi:namedview>
   <metadata
      id="metadata4601">
@@ -65,7 +65,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,13 +73,13 @@
      id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     transform="translate(122.90941,31.312506)">
+     transform="translate(123.90941,31.312506)">
     <rect
        style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect3017"
-       width="84"
+       width="96"
        height="40"
-       x="-122.90941"
+       x="-123.90941"
        y="-31.312506" />
     <g
        id="g3872">
@@ -87,13 +87,14 @@
          sodipodi:linespacing="125%"
          id="text2990"
          y="0.87149513"
-         x="-100.893"
+         x="-96.892998"
          style="font-size:32px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3771c8;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold Italic"
          xml:space="preserve"><tspan
            y="0.87149513"
-           x="-100.893"
+           x="-96.892998"
            id="tspan2992"
-           sodipodi:role="line">lang</tspan></text>
+           sodipodi:role="line"
+           style="letter-spacing:1.79775202">lang</tspan></text>
       <g
          id="g3010">
         <g
