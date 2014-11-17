@@ -24,7 +24,7 @@ class Top: Entity {
 }
 
 void main() {
-  simulate!(Top, "root");
+  simulate!(Top)("root", 4);
 }
 {% endcodeblock %}
 

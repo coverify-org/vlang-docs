@@ -29,7 +29,7 @@ $ unzip ${HOME}/Downloads/dmd.2.066.1.zip
 $ export PATH=${HOME}/local/dmd2/linux/bin64:${PATH}
 {% endcodeblock %}
 
-For DMD to work, you also need a working GCC compiler in yout PATH. Hopefully that is already installed on your system.
+For DMD to work, you also need a working GCC compiler in your PATH. Hopefully that is already installed on your system.
 
 ## Installation
 
