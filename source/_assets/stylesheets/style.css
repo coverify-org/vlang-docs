@@ -14,6 +14,10 @@ p {
    margin:12px 0;
 }
 
+a {
+   color: #3771C8;
+}
+
 article {
    max-width:725px;
 }
@@ -533,7 +537,7 @@ body:before {
 
 .nav > li > a {
    font-family: "PT Sans", "Source Sans Pro", Helvetica, Arial, sans-serif;
-   padding: 0.5em 2em;
+   padding: 0em 2em;
    color: #888;
 }
 
@@ -723,7 +727,7 @@ figure.code.expanded {
       color: rgb(30,36,47);
    }
    #nav .nav-link a {
-      padding: 0.5em 2em;
+      padding: 0em 2em;
       height: 44px;
     /* line-height: 20px; */
    }
@@ -749,8 +753,13 @@ figure.code.expanded {
 
 }
 
+.footer-wrapper {
+   padding-left:40px;
+   padding-right:40px;
+}
+
+
 #footer-copyright {
-   margin-left: 256px;
    font-size: 14px;
    color: #888;
 }
