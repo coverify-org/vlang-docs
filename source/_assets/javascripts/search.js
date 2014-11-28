@@ -37,7 +37,7 @@ function search(query) {
  
   $('.circle-indicator').show();
 
-  var result = $.getJSON('https://86xw1.api.searchify.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?')
+  var result = $.getJSON('http://vlang.api.houndsleuth.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?')
     .done(function(data){
       $('div#results').empty();
 
@@ -57,7 +57,7 @@ function search(query) {
         $('div#results').append('<div class="result">\
             <p><a class="title" href="' + root + result.docid + '">' + result.title + '</a><br/>\
         <a href="' + root + result.docid + '"\><small>' + root + result.docid + '</small></a><br/>\
-            ' + result.snippet_text + '</p>\
+            ' + result.text + '</p>\
         <br/></div>')
       });
     })
