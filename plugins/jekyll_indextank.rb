@@ -114,7 +114,8 @@ module Jekyll
     end
 
     def absolute_url
-      "#{@dir}#{url}"
+      # "#{@dir}#{url}"
+      "#{url}"      
     end
   end
 
