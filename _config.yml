@@ -51,9 +51,9 @@ asset_pipeline:
 
 # indextank settings
 #set this to true if you want to build the index
-indextank_api_url: http://:example@example.api.indexden.com #get an index URL at indexden.com
+indextank_api_url: http://:6u4t5Nz5Ax9e2oa@vlang.api.houndsleuth.com #get an index URL at indexden.com
 indextank_index:  docs #set this to the index name you set on indexden.com
 
 # these values are applied as regular expressions 
-# indextank_excludes: [index.html, 404.html, ^/secret/]
+indextank_excludes: [error.html, search.html, index.html, 404.html, ^/secret/]
 
