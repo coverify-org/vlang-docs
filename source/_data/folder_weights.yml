@@ -1,5 +1,7 @@
 ---
 /Getting_Started: 100
+/Data_Types: 80
+/Randomization: 80
 /API_Reference: 80
 /Apps: 20
 /Code_Examples: 50
@@ -8,4 +10,4 @@
 /Marketing_Emails: 40
 /User_Guide: 90
 /Utilities: 60
-/index.html: 100
+/index.html: 1000
