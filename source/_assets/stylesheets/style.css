@@ -29,7 +29,38 @@ article img {
 }
 
 table {
-   background-color: white;
+   display: block;
+   width: 100%;
+   overflow: auto;
+   word-break: normal;
+   word-break: keep-all;
+}
+
+thead {
+   display: table-header-group;
+   vertical-align: middle;
+   border-color: inherit;
+}
+
+table tr {
+   background-color: #fff;
+   border-top: 1px solid #ccc;
+}
+
+table .gutter {
+   padding: 0px 0px !important;
+   border: 0 solid #ddd;
+}
+
+table th, table td:not([class]) {
+   padding: 6px 13px;
+   border: 1px solid #ddd;
+}
+
+tbody {
+   display: table-row-group;
+   vertical-align: middle;
+   border-color: inherit;
 }
 
 .content-wrapper {
@@ -130,6 +161,10 @@ hr.docs-separator {
    margin: 40px 0 39px;
 }
 
+.callout p {
+   margin: 5px 0;
+}
+
 .callout-info {
    background-color: #f0f7fd;
    border-color: #d0e3f0;
@@ -142,7 +177,7 @@ hr.docs-separator {
 
 .callout {
    margin: 20px 0;
-   padding: 15px 30px 15px 15px;
+   padding: 5px 20px 5px 20px;
    border-left: 5px solid #eee;
 }
 
@@ -163,7 +198,7 @@ hr.docs-separator {
 }
 
 .code-buttons {
-   margin: 0 40px;
+   margin: 0;
 }
 
 .code-buttons > .nav-tabs { border-bottom: 0px }
@@ -181,10 +216,6 @@ hr.docs-separator {
 .code-buttons > .nav-tabs > li .code-button:hover, .code-buttons > .nav-tabs > li .code-button.hover { 
    cursor: pointer;
    background-color: #eee;
-}
-
-figure.code {
-   margin: 0 3em 1.5em;
 }
 
 #copy-prompt {
@@ -280,19 +311,23 @@ article .nav-tabs li a {
 
 #nav { 
    min-height: 68px; 
-   background-color: rgb(255, 255, 255); 
-   border-bottom: 1px solid #dfdfdf; 
+   /* border-bottom: 1px solid #dfdfdf; */
    margin-bottom: 0; 
 }
 
 #nav ul { list-style-type: none; }
-#nav .nav-link { height: 68px;}
+#nav .nav-link {
+   height: 64px;
+}
 #nav .nav-link a { 
    padding-left: 15pt; 
   /* line-height: 14px;  */
-   color: #404040; 
+   color: #404040;
+   padding: 20px 20px 20px 20px;
    text-transform: uppercase;
    text-decoration: none;
+   font-size: 18px;
+   margin-right: 12px;
 }
 
 #nav .nav-link a:hover {
@@ -302,6 +337,10 @@ article .nav-tabs li a {
 #nav .btn-navbar { color: #000; padding: 1px 10px; }
 
 #nav .navbar { border-radius:0; }
+
+#nav .navbar-header {
+   margin-left: 12px;
+}
 
 #nav .btn {
    border-radius:15px;
@@ -396,7 +435,10 @@ article .nav-tabs li a {
    padding:0;
 }
 
-#header { width: 100%; }
+#header {
+   width: 100%;
+   background-color: #efefef;
+}
 
 
 #header-wrap .btn-navbar { 
@@ -405,8 +447,9 @@ article .nav-tabs li a {
 }
 
 .navbar-search {
-   background-color: rgb(255, 255, 255);
+   background-color: transparent;
    padding:32px 64px 32px 16px;
+   margin-left: 12px;
    float:none;
 }
 
@@ -530,15 +573,15 @@ body:before {
 }
 
 .nav {
-   font-size: 14px;
+   font-size: 16px;
    text-decoration: none;
-   color: #888;
+   color: #404040;
 }
 
 .nav > li > a {
    font-family: "PT Sans", "Source Sans Pro", Helvetica, Arial, sans-serif;
    padding: 0em 2em;
-   color: #888;
+   color: #404040;
 }
 
 .nav > li.active > a {
@@ -564,7 +607,7 @@ body:before {
    color: #3771C8;
    margin: 0 0 0 0;
    padding-bottom: 0;
-   border-bottom: 1px solid #ddd;
+   /* border-bottom: 1px solid #ddd; */
 }
 
 li.official {
@@ -580,6 +623,7 @@ li.official {
    left: 0;
    bottom: 0;
    right: 0;
+   padding: 32px;
    overflow: auto;
    background-color: rgba(0,0,0,.7);
    z-index: 10000;
@@ -662,7 +706,7 @@ figure.code.expanded {
 #sidebar-header {
    background-color: rgb(192, 192, 192);
    color: black;
-   padding: 0px 18px;
+   padding: 0px 18px 0px 32px;
 }
 
 #sidebar-header h3 {
@@ -673,6 +717,7 @@ figure.code.expanded {
 #sidebar {
   /* border-top: 1px solid black; */
    max-height: none;
+   background-color: #efefef;
 }
 
 .live-doc {
@@ -721,7 +766,7 @@ figure.code.expanded {
 @media (max-width: 767px) {
    .nav-link { text-align:center; }
    #nav { /* border-bottom: 0px; */ }
-   #nav .navbar-header { border-bottom: 4px solid #3771C8; }
+   /* .navbar-static-top { border-bottom: 4px solid #3771C8; } */
    #navbar {
       background-color: transparent;
       color: rgb(30,36,47);
