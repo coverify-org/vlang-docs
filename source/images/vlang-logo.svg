@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.9999999"
+     inkscape:zoom="5.656854"
      inkscape:cx="51.173516"
-     inkscape:cy="22.854704"
+     inkscape:cy="29.925772"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -46,12 +46,12 @@
      showborder="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     borderlayer="true">
+     borderlayer="false">
     <inkscape:grid
        type="xygrid"
        id="grid3952"
        empspacing="4"
-       visible="true"
+       visible="false"
        enabled="true"
        snapvisiblegridlinesonly="false"
        originx="12.999996px"
@@ -65,7 +65,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -119,7 +119,7 @@
       </g>
     </g>
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="opacity:0.98999999000000005;fill:#efefef;fill-opacity:1;stroke:none"
        id="rect3017-6"
        width="120"
        height="48"
@@ -130,31 +130,28 @@
        inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3771c8;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold Italic"
+       style="font-size:40px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#375eab;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold Italic"
        x="-101.61684"
        y="80.292496"
        id="text2990-3"
        sodipodi:linespacing="125%"><tspan
-         style="letter-spacing:1.63699746"
+         style="letter-spacing:1.63699745999999990;fill:#375eab;fill-opacity:1"
          sodipodi:role="line"
          id="tspan2992-4"
          x="-101.61684"
          y="80.292496">lang</tspan></text>
-    <g
-       id="g3828">
-      <rect
-         y="59.687496"
-         x="-128.90941"
-         height="20"
-         width="20"
-         id="rect3902-7-9-9-0"
-         style="fill:none;stroke:#808080;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-      <path
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cssccccscc"
-         d="m -118.90941,71.687495 c 10,-20.089999 23.999997,-32 28.999997,-32 2,0 3.000001,2.000001 3.000001,2.000001 -1,5 -1,5 -1,5 0,0 -12,5 -21.999998,24.999999 -3,6 -5,10 -10,10 -5,0 -6,-5 -8,-15 0,0 -3,-0.5 -3,-3 0,-2.499999 3.5,-5.999999 6,-5.999999 2.5,0 4,4 6,13.999999 z"
-         id="path3956-1-3-6-3-1-3"
-         style="fill:#3771c8;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    </g>
+    <rect
+       style="fill:none;stroke:#404040;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3902-7-9-9-0"
+       width="20"
+       height="20"
+       x="-128.90941"
+       y="59.687496" />
+    <path
+       style="fill:#375eab;fill-opacity:1;stroke:#efefef;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3956-1-3-6-3-1-3"
+       d="m -118.90941,71.687494 c 12,-24 25.999996,-32 28.999997,-31.999999 2.999999,1e-6 3.000001,2.000001 3.000001,2.000001 -1,5 -1,5 -1,5 0,0 -12.000002,4.999998 -21.999998,24.999998 -3,6 -5,10.000001 -10,10.000001 -5,0 -6,-5 -8,-15 0,0 -2.99999,-10e-7 -3,-3 0,-2.000001 3,-6.000001 6,-5.999999 3,-2e-6 4,3.999999 6,13.999998 z"
+       sodipodi:nodetypes="cssccccscc"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

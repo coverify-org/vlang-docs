@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+{% unless page.sidebar == false %}
+    {% include_array default_asides %}
+{% endunless %}
+
+{% if page.sidebar == false %}
+<div class="col-md-12 col-sm-12 content-wrapper pagination-centered">
+  {% unless page.breadcrumbs == false %}
+    <section>{% breadcrumbs %}</section>
+  {% endunless %}
+  <article class="pagination-centered container-fluid" role="article" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+
+{% else %}
+<div class="col-md-12 col-sm-12 content-wrapper pagination-centered">
+  {% unless page.breadcrumbs == false %}
+    <section>{% breadcrumbs %}</section>
+  {% endunless %}
+<article class="pagination-centered container-fluid" role="article" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+{% endif %}
+    {% if page.title and page.showTitle != false %}
+  <header class="page-header">
+    <h1 class="entry-title" itemprop="name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+  </header>
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.last_modified %}
+    <meta itemprop="lastReviewed" content="{{ page.last_modified }}">
+  {% endif %}
+  {% if page.hideFeedback != true %}
+    {% include feedback.html %}
+  {% endif %}
+</div>
+</article>
+{% include livedocs_modal.html %}
+
+<meta itemprop="specialty" content="email">
+<meta itemprop="interactivityType" content="mixed">
+</div>

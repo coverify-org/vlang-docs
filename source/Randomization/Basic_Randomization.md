@@ -69,4 +69,4 @@ void main() {
 }	
 {% endcodeblock %}
 
-In this code example, the base class Foo has not been declared Randomizable. But the derived class Bar is still randomizable by virtue of implementing RandomizableIntf. In this case too, it is a must to mixin Randomization, which in fact provides the implementation of the RandomizableIntf methods.
+In this code example, the base class Foo has not been declared Randomizable. But the derived class Bar is still randomizable by virtue of implementing `RandomizableIntf`. In this case too it is a must to mixin `Randomization`, which in fact provides the implementation of the `RandomizableIntf` methods.
