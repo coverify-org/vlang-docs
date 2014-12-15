@@ -1,5 +1,5 @@
 .highlight, html .gist .gist-file .gist-syntax .gist-highlight {
-border:1px solid #f8f8f8!important;
+border:1px solid #ffffc0!important;
 }
 
 .highlight table td.code,html .gist .gist-file .gist-syntax .gist-highlight table td.code {
@@ -128,7 +128,7 @@ overflow:scroll;
 overflow-y:hidden;
 display:block;
 overflow-x:auto;
-background-color:#f8f8f8;
+background-color:#ffffc0;
 color:#222!important;
 padding:.8em!important;
 }
@@ -245,7 +245,7 @@ padding:0;
 }
 
 .highlight code {
-background-color:#f8f8f8;
+background-color:#ffffcf;
 }
 
 figure.code {
