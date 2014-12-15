@@ -846,8 +846,6 @@ div#about {
 .column {
    min-width: 320px;
    /* max-width: 640px; */
-   margin-left:  auto;
-   margin-right: auto;
    margin-top: 1em;
    margin-bottom: 1em;
 }
@@ -888,13 +886,25 @@ div#about {
    }
 }
 
+#footer-bottom .container-fluid {
+   text-align: center;
+}
+
+#footer-bottom .container-fluid .row {
+   text-align: center;
+}
+
 .footer-wrapper {
    padding-left:40px;
    padding-right:40px;
+   text-align: center;
 }
 
 
 #footer-copyright {
+   margin-left: auto;
+   margin-right: auto;
    font-size: 14px;
    color: #888;
+   text-align: center;
 }
