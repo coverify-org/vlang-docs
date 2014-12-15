@@ -1,5 +1,5 @@
 .highlight, html .gist .gist-file .gist-syntax .gist-highlight {
-border:1px solid #e1e1e1!important;
+border:1px solid #f8f8f8!important;
 }
 
 .highlight table td.code,html .gist .gist-file .gist-syntax .gist-highlight table td.code {
@@ -8,7 +8,7 @@ width:100%;
 
 .highlight .line-numbers,html .gist .gist-file .gist-syntax .gist-highlight .line-numbers {
 text-align:right;
-font-size:13px;
+font-size:100%;
 background:#eee;
 border-right:1px solid #e9e9e9!important;
 -webkit-box-shadow:#fff -1px 0 inset;
@@ -53,7 +53,7 @@ background:#fff!important;
 
 html .gist .gist-file .gist-meta {
 color:#999;
-font-size:.7em!important;
+font-size:100%!important;
 background:#eee;
 border:1px solid #e1e1e1!important;
 border-top:1px solid #fff!important;
@@ -81,7 +81,7 @@ background:#fff;
 -o-border-radius:.4em;
 border-radius:.4em;
 border:1px solid #e1e1e1;
-font-size:13px;
+font-size:100%;
 margin-bottom:2.1em;
 color:#222;
 overflow:auto;
@@ -103,7 +103,7 @@ p code,li code {
 display:inline-block;
 white-space:no-wrap;
 background:#fff;
-font-size:.8em;
+font-size:100%;
 line-height:1.5em;
 color:#555;
 border:1px solid #ddd;
@@ -117,18 +117,18 @@ padding:0 .3em;
 }
 
 p pre code,li pre code {
-font-size:1em!important;
+font-size:100%!important;
 background:none;
 border:none;
 }
 
 .pre-code,html .gist .gist-file .gist-syntax .gist-highlight pre,.highlight code {
-font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace!important;
+font-family:"Source Code Pro",Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace!important;
 overflow:scroll;
 overflow-y:hidden;
 display:block;
 overflow-x:auto;
-background-color:#fff;
+background-color:#f8f8f8;
 color:#222!important;
 padding:.8em!important;
 }
@@ -245,7 +245,7 @@ padding:0;
 }
 
 .highlight code {
-background-color:#fff;
+background-color:#f8f8f8;
 }
 
 figure.code {
@@ -261,7 +261,7 @@ position:relative;
 
 .code-title,html .gist .gist-file .gist-meta a[href*=#file],h3.filename,figure.code figcaption {
 text-align:center;
-font-size:13px;
+font-size:100%;
 line-height:2em;
 font-weight:400;
 margin-bottom:0;
@@ -287,7 +287,7 @@ position:absolute;
 right:.8em;
 text-decoration:none;
 z-index:1;
-font-size:13px;
+font-size:100%;
 padding-left:3em;
 color:#777!important;
 text-shadow:none;
