@@ -1,0 +1,93 @@
+---
+layout: main
+sidebar: false
+weight: 0
+title: Vlang | Verification for Nerds
+icon: fa-home
+showTitle: false
+breadcrumbs: false
+hideFeedback: true
+navigation:
+  show: true
+seo:
+  title: Getting Started
+  description: Home of Vlang -- opensource, multicore enabled, system verification language.
+---
+<div class="row home-list">
+  <div class="col-md-6">
+  <div class=" column">
+  <div id="about"> Vlang is an opensource multicore-enabled verification language built on top of the <a href="http://dlang.org"> D Programming Language</a>.
+  </div>
+  <ul class="feature">
+  <li>Complete Port of Universal Verification Methodology (UVM)</li>
+  <li>Can coexist with SystemVerilog UVM testbenches</li>
+  <li>ABI Compatibility with C/C++</li>
+  <li>Multi-Core Enabled parallel simulations</li>
+  <li>Seemless integration with SystemVerilog, VHDL and SystemC</li>
+  <li>BDD based constraint solver</li>
+  <li>Multiple Parallel Simulators and Multiple UVM Roots</li>
+  <li>Clean syntax without macros and preprocessing</li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-6">
+  <div class=" column">
+  <h3>
+  Example Code Snippet
+  </h3>
+{% highlight d %}
+@UVM_DEFAULT
+class apb_rw: uvm_sequence_item
+{
+  mixin uvm_object_utils;
+  enum kind_e {READ, WRITE};
+  @rand uint addr;
+  @rand uint wdata;
+  @rand kind_e kind;
+  uint rdata;
+  this(string name = "apb_rw") {
+    super(name);
+  }
+  Constraint! q{
+    addr < 4;
+  } addr_range;
+{% endhighlight %}
+
+  </div>
+  </div>
+</div>
+
+<div class="row home-list">
+  <div class="col-md-12">
+    <div class="column12">
+      <h3>
+	Publications
+      </h3>
+      <ul class="publication">
+	<li><a href="http://vlang.org/dvcon2014.pdf">Introduction to Next Generation Verification Language - Vlang</a>, DVCon Europe 2014, Munich</li>
+	<li><a href="http://vlang.org/fdl2014.pdf">A Dive into Opensource Verification Language, Vlang</a>, FDL 2014, Munich</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row home-list">
+  <div class="col-md-6">
+    <div class="column">
+      <div class="leadto">
+	<a href="https://github.com/coverify">
+	  <span class="fa-github fa" alt="Github Repo">Github Repository</span>
+	</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="column">
+      <div class="leadto">
+	<a href="{{root_url}}/index.html">
+	  <span class="fa-edit fa" alt="Documentation">Documentation</span>
+	</a>
+      </div>
+    </div>
+  </div>
+</div>

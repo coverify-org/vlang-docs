@@ -1,4 +1,4 @@
-.highlight,html .gist .gist-file .gist-syntax .gist-highlight {
+.highlight, html .gist .gist-file .gist-syntax .gist-highlight {
 border:1px solid #e1e1e1!important;
 }
 
@@ -226,6 +226,7 @@ width:100%;
 
 .highlight,.gist-highlight {
 margin-bottom:1.8em;
+margin-top:1em;
 background-color:#fff;
 overflow-y:hidden;
 overflow-x:auto;
