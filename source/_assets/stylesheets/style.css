@@ -453,7 +453,7 @@ article .nav-tabs li a {
 
 #header {
    width: 100%;
-   background-color: #e6e6e6;
+   background-color: #e0e0e0;
 }
 
 
@@ -733,7 +733,7 @@ figure.code.expanded {
 #sidebar {
   /* border-top: 1px solid black; */
    max-height: none;
-   background-color: #e6e6e6;
+   background-color: #e0e0e0;
 }
 
 .live-doc {
