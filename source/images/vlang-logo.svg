@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.075"
-     inkscape:cx="84.876325"
-     inkscape:cy="19.222969"
+     inkscape:zoom="3.5375"
+     inkscape:cx="45.809923"
+     inkscape:cy="36.039955"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -51,7 +51,7 @@
        type="xygrid"
        id="grid3952"
        empspacing="4"
-       visible="false"
+       visible="true"
        enabled="true"
        snapvisiblegridlinesonly="false"
        originx="5.8276366e-07px"
@@ -65,7 +65,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -215,45 +215,48 @@
          id="path3956-1-3-6-3-1-3-6-0-7"
          style="fill:#375eab;fill-opacity:1;stroke:#efefef;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
-    <rect
-       style="opacity:0.98999999000000005;fill:#000000;fill-opacity:0;stroke:none"
-       id="rect3017-6-3-5"
-       width="120"
-       height="48.000008"
-       x="-28.909414"
-       y="234.71249"
-       inkscape:export-filename="/home/puneet/inkscape/vlang-logo.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#375eab;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold Italic"
-       x="3.2105851"
-       y="274.1925"
-       id="text2990-3-1-6"
-       sodipodi:linespacing="125%"><tspan
-         style="letter-spacing:2.81551003;fill:#375eab;fill-opacity:1"
-         sodipodi:role="line"
-         id="tspan2992-4-1-8"
-         x="3.2105851"
-         y="274.1925">lang</tspan></text>
     <g
-       id="g3877-4"
-       transform="translate(114.25,57.239578)"
-       style="fill:#ffffff;stroke:none">
+       id="g3162">
       <rect
-         y="194.47292"
-         x="-139.15941"
-         height="25.000008"
-         width="25.000013"
-         id="rect3902-7-9-9-0-0-9-9-2"
-         style="fill:#ffffff;stroke:none" />
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/puneet/inkscape/vlang-logo.png"
+         y="234.71249"
+         x="-28.909414"
+         height="48.000008"
+         width="120"
+         id="rect3017-6-3-5"
+         style="opacity:0.98999999000000005;fill:#000000;fill-opacity:0;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2990-3-1-6"
+         y="274.1925"
+         x="3.2105851"
+         style="font-size:40px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#375eab;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold Italic"
+         xml:space="preserve"><tspan
+           y="274.1925"
+           x="3.2105851"
+           id="tspan2992-4-1-8"
+           sodipodi:role="line"
+           style="letter-spacing:2.81551003;fill:#375eab;fill-opacity:1">lang</tspan></text>
+      <g
+         style="fill:#ffffff;stroke:none"
+         transform="translate(114.25,57.239578)"
+         id="g3877-4">
+        <rect
+           style="fill:#ffffff;stroke:none"
+           id="rect3902-7-9-9-0-0-9-9-2"
+           width="25.000013"
+           height="25.000008"
+           x="-139.15941"
+           y="194.47292" />
+      </g>
+      <path
+         style="fill:#375eab;fill-opacity:1;stroke:#efefef;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path3956-1-3-6-3-1-3-6-0-7-4"
+         d="m -13.909413,263.7125 c 1,4 3,0 3,0 10.99999932,-21.97499 22.000001,-28.975 27,-29 0.999983,-0.005 1,1 1,1 -1,4 -1,4 -1,4 0,0 -9.9999998,2.02501 -21.0000004,24 -5,10 -6.0000006,11 -8.9999996,11 -3,0 -4.000001,-3 -6,-13 0,0 0,-1 -1,-1 0,0 -2,0 -2,-2 0,-2 3,-5 5,-5 1,0 1.99999,1e-5 4,10 z"
+         sodipodi:nodetypes="cssscccscscc"
+         inkscape:connector-curvature="0" />
     </g>
-    <path
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csssccccscc"
-       d="m -13.909413,264.7125 c 1,4 3,0 3,0 10.99999974,-21.97499 22.000001,-29.975 27,-30 0.999983,-0.005 1,1 1,1 -1,4 -1,4 -1,4 0,0 -9.9999998,3.02501 -21.0000004,25 -2.9999999,6 -4.9999999,10 -7.9999996,10 -3.999999,0.025 -5.00001,-3.00001 -7,-13 0,0 -3,-1 -3,-3 0,-2 3,-5 4,-5 2,0 2.99999,1.00001 5,11 z"
-       id="path3956-1-3-6-3-1-3-6-0-7-4"
-       style="fill:#375eab;fill-opacity:1;stroke:#efefef;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   </g>
 </svg>
