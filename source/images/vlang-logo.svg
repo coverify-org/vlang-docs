@@ -27,8 +27,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.99999995"
-     inkscape:cx="9.7337986"
+     inkscape:zoom="7.075"
+     inkscape:cx="84.876325"
      inkscape:cy="19.222969"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -216,7 +216,7 @@
          style="fill:#375eab;fill-opacity:1;stroke:#efefef;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
     <rect
-       style="opacity:0.98999999;fill:#e6e6e6;fill-opacity:1;stroke:none"
+       style="opacity:0.98999999000000005;fill:#000000;fill-opacity:0;stroke:none"
        id="rect3017-6-3-5"
        width="120"
        height="48.000008"
