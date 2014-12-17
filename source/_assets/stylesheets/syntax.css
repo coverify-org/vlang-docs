@@ -1,5 +1,11 @@
+.column .highlight {
+   border:1px solid #ffffc0!important;
+   background-color:#ffffc0;
+   margin-top:1em;
+}
+
 .highlight, html .gist .gist-file .gist-syntax .gist-highlight {
-border:1px solid #ffffc0!important;
+border:1px solid #e0e0e0!important;
 }
 
 .highlight table td.code,html .gist .gist-file .gist-syntax .gist-highlight table td.code {
@@ -128,7 +134,7 @@ overflow:scroll;
 overflow-y:hidden;
 display:block;
 overflow-x:auto;
-background-color:#ffffc0;
+background-color:#ffffff;
 color:#222!important;
 padding:.8em!important;
 }
@@ -226,7 +232,6 @@ width:100%;
 
 .highlight,.gist-highlight {
 margin-bottom:1.8em;
-margin-top:1em;
 background-color:#fff;
 overflow-y:hidden;
 overflow-x:auto;
@@ -245,7 +250,7 @@ padding:0;
 }
 
 .highlight code {
-background-color:#ffffcf;
+background-color:#ffffff;
 }
 
 figure.code {
