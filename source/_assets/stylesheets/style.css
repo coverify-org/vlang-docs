@@ -322,7 +322,7 @@ article .nav-tabs li a {
 #nav .nav-link a { 
   /* line-height: 14px;  */
    color: #ffffff;
-   padding: 10px;
+   padding: 10px 10px;
    text-transform: uppercase;
    text-decoration: none;
    font-size: 16px;
@@ -826,9 +826,7 @@ div#about {
       color: rgb(30,36,47);
    }
    #nav .nav-link a {
-      padding: 0em 2em;
       height: 44px;
-    /* line-height: 20px; */
    }
 
    #nav .nav-link {
