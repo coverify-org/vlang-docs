@@ -139,10 +139,10 @@ h3, .h3 {
 }
 
 #logo {
-   margin-top:10px;
+   margin-top:12px;
    display:inline-block;
    width:120px;
-   height:48px;
+   height:40px;
    background: url(../images/vlang-logo.png?embed=true) no-repeat;
 }
 
