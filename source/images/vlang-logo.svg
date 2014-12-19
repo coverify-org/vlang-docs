@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="120"
-   height="48.062492"
+   height="40"
    id="svg4596"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -28,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313708"
-     inkscape:cx="35.870885"
-     inkscape:cy="24.174353"
+     inkscape:cx="32.138718"
+     inkscape:cy="21.386693"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -54,8 +54,8 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       originx="1.1655273e-06px"
-       originy="9.2651368e-07px"
+       originx="0px"
+       originy="0px"
        spacingx="1px"
        spacingy="1px" />
   </sodipodi:namedview>
@@ -75,7 +75,7 @@
      id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     transform="translate(28.909414,-234.625)">
+     transform="translate(28.971914,-242.75)">
     <rect
        style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect3017"
@@ -218,50 +218,48 @@
          style="fill:#375eab;fill-opacity:1;stroke:#efefef;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
     <g
-       id="g3020">
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/puneet/inkscape/vlang-logo.png"
-         y="234.68748"
-         x="-28.909414"
-         height="48.000008"
-         width="120"
-         id="rect3017-6-3-5"
-         style="opacity:0.98999999;fill:#000000;fill-opacity:0;stroke:none" />
+       id="g3827"
+       transform="translate(3.9375,0.06249202)">
       <g
          transform="translate(-3,0)"
          id="g3983">
-        <text
-           xml:space="preserve"
-           style="font-size:40px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#375eab;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold Italic"
-           x="7.9105859"
-           y="274.16748"
-           id="text2990-3-1-6"
-           sodipodi:linespacing="125%"><tspan
-             style="letter-spacing:3.23217702;fill:#375eab;fill-opacity:1"
-             sodipodi:role="line"
-             id="tspan2992-4-1-8"
-             x="7.9105859"
-             y="274.16748">lang</tspan></text>
         <g
            id="g3795"
            transform="translate(-0.99999971,0)">
           <rect
-             y="250.68748"
+             y="251.68752"
              x="-24.909414"
-             height="26.000008"
-             width="26"
+             height="24.999992"
+             width="25"
              id="rect3902-7-9-9-0-0-9-9-2"
              style="fill:#ffffff;stroke:none" />
           <path
              style="fill:#375eab;fill-opacity:1;stroke:#efefef;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
              id="path3956-1-3-6-3-1-3-6-0-7-4"
-             d="m -14.909413,262.7125 c 2,7 4.9999996,-0.025 4.9999996,-0.025 9.9999991,-20 21.9999994,-28.00001 26.0000004,-28.00001 1,0 1,1 1,1 -1,5 -1,4 -1,4 0,0 -11.0000004,5 -20.0000004,24 -4,7.99999 -6,11 -9.9999996,11 -4.000001,-1e-5 -5,-3 -7,-13 0,0 0,-1 -1,-1 0,0 -1,-1e-5 -1,-2 0,-2.00001 2,-6 4,-6 1,0 1.99999,0.025 4,10.02502 z"
+             d="m -14.909413,262.7125 c 2,7 4.9999996,-0.025 4.9999996,-0.025 5.9999991,-11.99999 14.999999,-19.99999 17.9999991,-19.99999 1,0 1,1 1,1 -1,5 -1,5 -1,5 0,0 -7,4 -12,14 -4,7.99999 -6.9999997,12 -9.9999987,11.99998 -3.000001,2e-5 -5,-3 -7,-13 0,0 0,-1 -1,-1 0,0 -1,-1e-5 -1,-2 0,-2.00001 1.999999,-4.99998 3.999999,-4.99998 1,0 1.999991,-0.97502 4.000001,9.025 z"
              sodipodi:nodetypes="cssscccscsccc"
              inkscape:connector-curvature="0" />
         </g>
       </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3013"
+         y="274.16748"
+         x="1.610589"
+         style="font-size:40px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#375eab;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold Italic"
+         xml:space="preserve"><tspan
+           style="letter-spacing:1.76776803"
+           y="274.16748"
+           x="1.610589"
+           id="tspan3015"
+           sodipodi:role="line">lang</tspan></text>
     </g>
+    <rect
+       style="opacity:0.98999999;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3835"
+       width="120"
+       height="40"
+       x="-28.971914"
+       y="242.75" />
   </g>
 </svg>
