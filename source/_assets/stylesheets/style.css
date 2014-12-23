@@ -743,6 +743,7 @@ figure.code.expanded {
   /* border-top: 1px solid black; */
    max-height: none;
    background-color: #e0e0e0;
+   padding-bottom: 24px;
 }
 
 .live-doc {
