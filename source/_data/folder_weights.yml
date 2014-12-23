@@ -1,13 +1,9 @@
 ---
 /Getting_Started: 100
 /Data_Types: 80
-/Randomization: 80
-/API_Reference: 80
-/Apps: 20
+/Randomization: 70
+/Core_Simulator: 60
 /Code_Examples: 50
-/Delivery_Metrics: 30
-/Integrate: 70
-/Marketing_Emails: 40
-/User_Guide: 90
-/Utilities: 60
+/Integrate: 40
+/Utilities: 30
 /index.html: 1000

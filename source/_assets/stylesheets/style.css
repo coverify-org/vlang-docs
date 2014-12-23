@@ -73,9 +73,9 @@ b, strong {
    font-weight: 500;
 }
 
-h3, .h3 {
-   font-weight: bold;
-}
+/* h3, .h3 { */
+/*    font-weight: bold; */
+/* } */
 
 .btn {
    padding-left: 1em;
@@ -325,7 +325,8 @@ article .nav-tabs li a {
    padding: 10px 10px;
    text-transform: uppercase;
    text-decoration: none;
-   font-size: 16px;
+   font-size: 18px;
+   font-weight: 600;
    margin: 10px 16px;
    border-radius: 5px;
    background-color: #375EAB;
@@ -362,7 +363,7 @@ article .nav-tabs li a {
    padding-top:10px;
    padding-bottom:10px;
    vertical-align:middle;
-   font-family: "PT Sans";
+   font-family: "Source Sans Pro";
    overflow: hidden;
    background-color: #375EAB;
    color: #fff;
@@ -370,6 +371,8 @@ article .nav-tabs li a {
 
 .home-list .leadto a {
    color: #fff;
+   font-size: 18px;
+   font-weight: 600;
 }
 
 .home-list .panel a:hover {
@@ -390,7 +393,7 @@ article .nav-tabs li a {
    padding-top:50px;
    height:190px;
    vertical-align:middle;
-   font-family: "PT Sans";
+   font-family: "Source Sans Pro";
    overflow: hidden;
 }
 
@@ -404,7 +407,8 @@ article .nav-tabs li a {
 
 .home-list .panel h3 {
    color: #375EAB;
-   font-family: "PT Sans";
+   font-weight: bold;
+   font-family: "Roboto Slab";
 }
 
 .home-list .panel:hover p {
@@ -558,11 +562,12 @@ body:before {
 }
 
 .subtree-name {
-   padding: 0.5em 2em;
+   padding: 0 2em;
 }
 
 .subtree-name-str {
-   font-family: "PT Sans", "Source Sans Pro", Helvetica, Arial, sans-serif;
+   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+   font-weight: 600;
 }
 
 #nav-menu .subtree-name+ul li {
@@ -596,8 +601,9 @@ body:before {
 }
 
 .nav > li > a {
-   font-family: "PT Sans", "Source Sans Pro", Helvetica, Arial, sans-serif;
+   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
    padding: 0em 2em;
+   font-weight: 600;
    color: #404040;
 }
 
@@ -613,6 +619,7 @@ body:before {
    float: left;
    padding: 20px 0px 0px 0px;
    margin: 0 0 10px;
+   font-weight: 600;
 }
 
 .breadcrumb-pane .edit-link {
@@ -621,7 +628,8 @@ body:before {
 }
 
 .page-header {
-   color: #375EAB;
+   /* color: #375EAB; */
+   color: #404040;
    margin: 0 0 0 0;
    padding-bottom: 0;
    /* border-bottom: 1px solid #ddd; */
