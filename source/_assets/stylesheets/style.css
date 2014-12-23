@@ -326,7 +326,7 @@ article .nav-tabs li a {
    text-transform: uppercase;
    text-decoration: none;
    font-size: 18px;
-   font-weight: 600;
+   /* font-weight: 600; */
    margin: 10px 16px;
    border-radius: 5px;
    background-color: #375EAB;
@@ -372,7 +372,7 @@ article .nav-tabs li a {
 .home-list .leadto a {
    color: #fff;
    font-size: 18px;
-   font-weight: 600;
+   /* font-weight: 600; */
 }
 
 .home-list .panel a:hover {
@@ -567,7 +567,7 @@ body:before {
 
 .subtree-name-str {
    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-   font-weight: 600;
+   /* font-weight: 600; */
 }
 
 #nav-menu .subtree-name+ul li {
@@ -603,7 +603,7 @@ body:before {
 .nav > li > a {
    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
    padding: 0em 2em;
-   font-weight: 600;
+   /* font-weight: 600; */
    color: #404040;
 }
 
@@ -619,7 +619,7 @@ body:before {
    float: left;
    padding: 20px 0px 0px 0px;
    margin: 0 0 10px;
-   font-weight: 600;
+   /* font-weight: 600; */
 }
 
 .breadcrumb-pane .edit-link {
