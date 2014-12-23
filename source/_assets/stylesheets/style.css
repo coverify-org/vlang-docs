@@ -325,7 +325,7 @@ article .nav-tabs li a {
    padding: 10px 10px;
    text-transform: uppercase;
    text-decoration: none;
-   font-size: 18px;
+   font-size: 16px;
    /* font-weight: 600; */
    margin: 10px 16px;
    border-radius: 5px;
@@ -371,8 +371,6 @@ article .nav-tabs li a {
 
 .home-list .leadto a {
    color: #fff;
-   font-size: 18px;
-   /* font-weight: 600; */
 }
 
 .home-list .panel a:hover {
