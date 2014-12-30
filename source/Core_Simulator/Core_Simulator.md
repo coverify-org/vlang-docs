@@ -9,8 +9,8 @@ navigation:
 ---
 Vlang uses Electronic System Description Language (ESDL) as the base discrete event simulator. Like Vlang, ESDL is also a package written in the D programming language. To support the basic discrete event functionality, ESDL implements the following concepts in D:
 
-1. [Concept of Time]({{root_url}}/Core_Simulator/time.html)
-2. Entity and Hierarchy
+1. [Concept of Time]({{root_url}}/Core_Simulator/Time.html)
+2. [Entity and Hierarchy]({{root_url}}/Core_Simulator/Hierarchy.html)
 3. Ports and Connectivity
 4. Events and Notifications
 5. Processes
