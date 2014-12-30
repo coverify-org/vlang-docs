@@ -1,0 +1,12 @@
+---
+seo:
+  title: Contributing
+title: Contributing
+weight: 100
+layout: page
+navigation:
+  show: true
+---
+This documentation is powered by Jekyll and its content can be found on [github](https://github.com/coverify/vlang-docs). To contribute, please feel free to send pull requests.
+
+You can also contribute to Vlang. It is implemented in the [D Programming Language](http://dlang.org) and the source code is available on [github](https://github.com/coverify/vlang).
